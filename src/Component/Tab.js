@@ -25,7 +25,8 @@ const Tab = () => {
         const loan =loanRef.current.value
         const interest=interestRef.current.value
         const tenure =tenureRef.current.value
-        console.log(email,name,age,mobile,business,gts,address,loan,interest,tenure)
+       
+        // console.log(email,name,age,mobile,business,gts,address,loan,interest,tenure)
        
         const data={
            Email:email,
@@ -45,19 +46,19 @@ const Tab = () => {
         if(data){
 
        
-         fetch('http://localhost:5000/deatail',{
+         fetch('https://warm-sands-67163.herokuapp.com/deatail',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(data)
          }).then(res=>res.json())
          .then(data=>{
-            console.log(data)
+            // console.log(data)
              if(data.acknowledged==true){
                return toast('succes fully Data Add')
              }
-               else{
-                 return toast('Error')
-               }
+            else{
+                return toast('error')
+            }
          })
 
         }  
@@ -96,7 +97,7 @@ const Tab = () => {
                               { /* Personal details */ }
                         <div className="row g-3 mt-5 ">
                             <div className="col-md-3">
-                                <label for="inputEmail4" class="form-label">Name</label>
+                                <label for="inputEmail4" class="form-label" fw-bold>Name</label>
                                 <input  ref={nameRef} type="name" class="form-control" required id="inputEmail4" />
                             </div> <br/>
                             <div className="col-md-3">
