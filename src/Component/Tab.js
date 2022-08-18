@@ -74,7 +74,7 @@ const Tab = () => {
     }
 
     return (
-        <div className='container mx-auto mt-5 font-blod'>
+        <div className='container mx-auto mt-5'>
             <ul className="nav nav-tabs" id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">
                     <button className="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"> Personal details</button>
@@ -97,20 +97,20 @@ const Tab = () => {
                               { /* Personal details */ }
                         <div className="row g-3 mt-5 ">
                             <div className="col-md-3">
-                                <label for="inputEmail4" class="form-label" fw-bold>Name</label>
-                                <input  ref={nameRef} type="name" class="form-control" required id="inputEmail4" />
+                                <label for="inputEmail4" className="form-label " >Name</label>
+                                <input  ref={nameRef} type="name" className="form-control" required id="inputEmail4" />
                             </div> <br/>
                             <div className="col-md-3">
-                                <label for="inputPassword4" class="form-label">Age</label>
-                                <input ref={ageRef} type="number" class="form-control" required id="inputPassword4" />
+                                <label for="inputPassword4" className="form-label">Age</label>
+                                <input ref={ageRef} type="number" className="form-control" required id="inputPassword4" />
                             </div>
                             <div className="col-md-3">
-                                <label for="inputPassword4" class="form-label"> Mobile No</label>
-                                <input ref={mobileRef} type="number" class="form-control"    required id="inputPassword4"  />
+                                <label for="inputPassword4" className="form-label"> Mobile No</label>
+                                <input ref={mobileRef} type="number" className="form-control"    required id="inputPassword4"  />
                             </div>
                             <div className="col-md-3">
-                                <label for="inputPassword4" class="form-label">Email</label>
-                                <input type="email" ref={emailRef}  class="form-control" id="inputPassword4" required />
+                                <label for="inputPassword4" className="form-label">Email</label>
+                                <input type="email" ref={emailRef}  className="form-control" id="inputPassword4" required />
                             </div>
                            
                            
@@ -123,16 +123,16 @@ const Tab = () => {
                     <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <div className="row g-3 mt-5 ">
                             <div className="col-md-3">
-                                <label for="inputEmail4" class="form-label"> Applicant’s Business Name</label>
-                                <input ref={businessRef} required type="text" class="form-control" id="inputEmail4"  />
+                                <label for="inputEmail4" className="form-label"> Applicant’s Business Name</label>
+                                <input ref={businessRef} required type="text" className="form-control" id="inputEmail4"  />
                             </div> <br/>
                             <div className="col-md-3">
-                                <label for="inputPassword4" class="form-label"> GST No</label>
-                                <input ref={gtsRef} type="number" class="form-control" id="inputPassword4"  required  />
+                                <label for="inputPassword4" className="form-label"> GST No</label>
+                                <input ref={gtsRef} type="number" className="form-control" id="inputPassword4"  required  />
                             </div>
                             <div className="col-md-3">
-                                <label for="inputPassword4" class="form-label">Address</label>
-                                <input ref={addressRef} type="text" class="form-control" id="inputPassword4"  required  />
+                                <label for="inputPassword4" className="form-label">Address</label>
+                                <input ref={addressRef} type="text" className="form-control" id="inputPassword4"  required  />
                             </div>
                            
                            
@@ -145,16 +145,16 @@ const Tab = () => {
                     <div className="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                     <div className="row g-3 mt-5 ">
                             <div className="col-md-3">
-                                <label for="inputEmail4" class="form-label">Loan amount</label>
-                                <input ref={loanRef} type="number" class="form-control" id="inputEmail4"  required  />
+                                <label for="inputEmail4" className="form-label">Loan amount</label>
+                                <input ref={loanRef} type="number" className="form-control" id="inputEmail4"  required  />
                             </div> <br/>
                             <div className="col-md-3">
-                                <label for="inputPassword4" class="form-label">Interest Rate</label>
-                                <input ref={interestRef} type="number" class="form-control" id="inputPassword4"  required  />
+                                <label for="inputPassword4" className="form-label">Interest Rate</label>
+                                <input ref={interestRef} type="number" className="form-control" id="inputPassword4"  required  />
                             </div>
                             <div className="col-md-3">
-                                <label for="inputPassword4" class="form-label"> Loan tenure</label>
-                                <input ref={tenureRef} type="number" class="form-control" id="inputPassword4"  required  />
+                                <label for="inputPassword4" className="form-label"> Loan tenure</label>
+                                <input ref={tenureRef} type="number" className="form-control" id="inputPassword4"  required  />
                             </div>
                         
                       </div>
